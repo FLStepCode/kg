@@ -1,5 +1,3 @@
-#!/bin/bash
-
 ffmpeg -i input_video.mp4 -ss 00:00:35 -t 00:00:10 -c:v copy -c:a copy cropped.mp4
 
 convert -background none -resize 50% -depth 8 plate.svg plate.png
